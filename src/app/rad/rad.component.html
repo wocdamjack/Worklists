@@ -1,0 +1,59 @@
+<!--
+            "OrderName": "HPEL1VRTP",
+            "OrderNumber": null,
+            "SpecimenNumber": null,
+            "AccessionNumber": null,
+            "OrderType": "XR",
+            "PatientEncounterId": 1647686,
+            "PatientEncounterKey": "CA0045599487",
+            "PatientDischargeDate": "2018-12-18T00:00:00",
+            "PatientFirstName": "JEANMICHEL",
+            "PatientLastName": "JEAN MICHEL",
+            "EstimatedTimeOfCompletion": "2018-09-02T09:09:00",
+            "AttendingPhysicianFirstName": "Jinesh",
+            "AttendingPhysicianLastName": "Kochar",
+            "OrderingPhysicianFirstName": "Laura",
+            "OrderingPhysicianLastName": "Robotham",
+            "OrderDate": "2018-09-01T18:09:00"
+-->
+
+<div *ngIf="(rad$ | async) as radResults" class="card-panel">
+  
+  <kendo-grid [data]="radResults.WorkItems"  >
+      <kendo-grid-column field="PatientEncounterKey" title="Account"></kendo-grid-column>
+      <kendo-grid-column field="EstimatedTimeOfCompletion" title="ETC" width="40"></kendo-grid-column>
+      <kendo-grid-column field="PatientFirstName" title="First" width="40"></kendo-grid-column>
+      <kendo-grid-column field="PatientLastName" title="Last" width="40"></kendo-grid-column>
+  </kendo-grid>
+
+</div>
+
+<!-- <div *ngIf="radData" class="container">
+  <h3>Currrent Week Region Report</h3>
+  <kendo-chart [categoryAxis]="{ categories: regionCategories }">
+    <kendo-chart-title text="Region Data View"> </kendo-chart-title>
+    <kendo-chart-series>
+      <kendo-chart-series-item
+        *ngFor="let item of radData"
+        type="column"
+        [data]="item.data"
+        [name]="item.name"
+      >
+      </kendo-chart-series-item>
+    </kendo-chart-series>
+  </kendo-chart>
+</div> -->
+
+<!--
+  not used yet
+  <kendo-grid [data]="gridData" [height]="410">
+      <kendo-grid-column field="WeekEndDate" title="Weekending" width="250">
+      </kendo-grid-column>
+      <kendo-grid-column field="savings" title="Savings">
+      </kendo-grid-column>
+      <kendo-grid-column field="spend" title="Spend" width="80">
+      </kendo-grid-column>
+      <kendo-grid-column field="lum_qty" title="Lum Qty" width="80">
+      </kendo-grid-column>
+  </kendo-grid>
+-->

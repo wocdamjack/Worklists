@@ -1,0 +1,21 @@
+.card-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2em;
+}
+
+mat-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-footer-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2em;
+  
+  font-size: 10px;
+}
+
+.card-footer-panel span {
+  font-weight: 500;
+}

@@ -1,0 +1,46 @@
+.grid-container {    
+  text-align:right;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: ". . .";
+}
+
+.nav-fixed li {
+    display: block;
+    height: 3em;
+    margin: 4px;   
+    background: rgb(209, 231, 175);
+    float: left;
+
+  }
+  
+  .nav-fixed .double-line {
+    margin:10px;
+    line-height: 1.5em;
+  }
+  .container {
+    clear:left;
+    margin-left:40px;
+    margin-right: 40px;
+    background-color:palevioletred;
+    /* border: 1px solid black;  */
+  }
+  
+  .inline {
+    list-style: none;
+  }
+
+  .mat-card-content {
+    text-align: center;
+    background-color: #eeeedd;
+  } 
+  .mat-card-title{
+    text-align: center;
+    font-size: xx-large;
+  }
+  .mat-card-subtitle {
+    margin-top: 8px !important;
+    text-align: center;
+    font-size: x-large;
+  }

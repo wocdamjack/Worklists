@@ -1,0 +1,30 @@
+.grid-container {    
+  text-align:right;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 'lhm Content';
+}
+
+.lhm {
+  grid-area: lhm;
+  margin-right: 10px;
+}
+
+.Content {
+  text-align: center;
+  display: grid;
+  grid-area: Content;
+}
+
+.nav {
+    /* border: 1px black solid; */
+  padding-left: 10;
+  margin-top: 20;
+  list-style: none;
+}
+
+.nav li {
+  background-color: paleblue;
+  margin-top:50px;
+}
